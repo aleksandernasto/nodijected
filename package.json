@@ -1,0 +1,54 @@
+{
+  "name": "nodijected",
+  "version": "0.1.0",
+  "description": "simple node dependency injector written in typescript",
+  "keywords": [
+    "dependency injection",
+    "di",
+    "container",
+    "ioc",
+    "inversion of control container",
+    "javascript",
+    "typescript",
+    "node"
+  ],
+  "bugs": {
+    "url": "https://github.com/al81xx/nodijected/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/al81xx/nodijected.git"
+  },
+  "license": "GNU AFFERO GPLV3",
+  "author": "al81xx",
+  "main": "lib/nodijected.js",
+  "types": "lib/nodijected.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
+  "scripts": {
+    "build": "rimraf lib && tsc",
+    "lint": "eslint -c .eslintrc.js --ext .ts src",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "test": "jest --config jestconfig.json --passWithNoTests"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^26.0.19",
+    "@types/node": "^14.14.0",
+    "@typescript-eslint/eslint-plugin": "^4.10.0",
+    "@typescript-eslint/parser": "^4.10.0",
+    "eslint": "^7.16.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsdoc": "^30.7.9",
+    "eslint-plugin-prefer-arrow": "^1.2.2",
+    "jest": "^26.6.3",
+    "rimraf": "^3.0.0",
+    "ts-jest": "^26.4.4",
+    "typescript": "~4.1.0"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}
