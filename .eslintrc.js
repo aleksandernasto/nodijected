@@ -19,6 +19,7 @@ module.exports = {
         "eslint-plugin-import",
         "@typescript-eslint",
     ],
+    "ignorePatterns": ["lib/**", ".eslintrc.js"],
     "rules": {
         "@typescript-eslint/adjacent-overload-signatures": "error",
         "@typescript-eslint/array-type": [
